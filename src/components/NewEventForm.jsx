@@ -49,6 +49,7 @@ const NewEventForm = ({ data, insertEvent, updateEvent }) => {
 
     if (!form.endTime || form.endTime === "") delete form.endTime;
     if (form.id === null || form.id === undefined) {
+      delete form.id;
       insertEvent(form).then(() => {
         setMessage({
           type: "success",
