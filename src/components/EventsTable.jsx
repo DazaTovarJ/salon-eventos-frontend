@@ -3,9 +3,7 @@ import { Table } from "react-bootstrap";
 import TableRow from "./TableRow";
 
 const EventsTable = ({ data, setDataToEdit, deleteData }) => {
-  return data === null || data.length === 0 ? (
-    <p>No existen registros en el sistema. Por favor cree uno</p>
-  ) : (
+  return (
     <Table striped hover>
       <thead>
         <tr>
@@ -20,7 +18,12 @@ const EventsTable = ({ data, setDataToEdit, deleteData }) => {
       </thead>
       <tbody>
         {data.map(item => (
-          <TableRow key={item.id} data={item} />
+          <TableRow
+            key={item.id}
+            data={item}
+            setDataToEdit={setDataToEdit}
+            deleteData={deleteData}
+          />
         ))}
       </tbody>
     </Table>
