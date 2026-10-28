@@ -37,7 +37,7 @@
     "@testing-library/user-event": "^14.6.8",
     "@types/react-router-bootstrap": "^0.24.5",
     "@vitejs/plugin-react": "^6.1.2",
-    "eslint": "^10.3.0",
+    "eslint": "^10.13.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "jsdom": "^29.1.1",
     "vite": "^8.3.5",
